@@ -11,6 +11,8 @@ Version: 2.0
   box-sizing: border-box;
 }
 
+/* navbar*/
+
 header {
   list-style-type: none;
   margin: 0;
@@ -20,6 +22,13 @@ header {
   opacity: 80%;
 }
 
+nav  {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* body*/
 
 body {
   background-image: url('foto/weg.jpg');
@@ -28,7 +37,6 @@ body {
   background-attachment: fixed;
   background-position: center center;
 }
-
 .content {
   margin-top: 100px;
   height: 350px;
@@ -38,11 +46,13 @@ body {
 }
 
 article {
-  margin-top: 350px;
   background-color: #f2f2f2;
-  height: 700px;
-}
+  height: 600px;
 
+}
+.background {
+  height: 400px;
+}
 .entry-title {
   display: flex;
   justify-content: center;
@@ -63,8 +73,9 @@ margin-top: 25px;
 
 h1 {
   color: white;
-  display: flex;
-  justify-content: center;
+  padding-left: 5px;
+  padding-top: 5px;
+  font-size: 40px;
 }
 
 li {
@@ -96,7 +107,7 @@ li a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 350px;
+  margin-top: 250px;
   opacity: 80%;
 }
 
@@ -140,25 +151,4 @@ li a:hover {
   margin: 15px 0 10px 0;
   font-size: 1rem;
   font-weight: 300;
-}
-
-
-@keyframes animateWaves {
-  0% {
-    background-position-x: 1000px;
-  }
-
-  100% {
-    background-positon-x: 0px;
-  }
-}
-
-@keyframes animate {
-  0% {
-    background-position-x: -1000px;
-  }
-
-  100% {
-    background-positon-x: 0px;
-  }
 }

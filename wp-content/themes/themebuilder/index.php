@@ -16,7 +16,7 @@
 
 <body>
     <?php require_once 'nav.php'; ?>
-
+<div class="background"></div>
 
     <main>
         <!-- De onderstaande regels code kijkt of en hoeveel posts er zijn en plaatst deze op de pagina.  -->
@@ -25,15 +25,14 @@
             while (have_posts()) :
                 the_post();
         ?>
-
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                    <h2 class="entry-title"><?php the_title(); ?></h2>
+                    <h2 class="entry-title"><?php the_title(); ?></h2> <!--hier word de titel van de post geprint-->
                     <div class="content">
 
                         <div class="text">
                             <br>
                             <div class="entry-content">
-                                <?php the_content(); ?>
+                                <?php the_content(); ?> <!--hier word de content geprint-->
                             </div>
                         </div>
                         <div class="foto">
