@@ -1,0 +1,164 @@
+/*
+Theme Name: Blank Theme V2
+Author: ROC Horizon College
+Description: Dit thema laat op de homepage een overzicht van posts zien met een bovenaan een lijst van links naar de beschikbare pagina's
+Version: 2.0
+*/
+/*Black, white and turquoise accent: minimalist and cool*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  opacity: 80%;
+}
+
+
+body {
+  background-image: url('foto/weg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.content {
+  margin-top: 100px;
+  height: 350px;
+  background-color: #ececec;
+  display: flex;
+  flex-direction: row;
+}
+
+article {
+  margin-top: 350px;
+  background-color: #f2f2f2;
+  height: 700px;
+}
+
+.entry-title {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+
+}
+
+.text {
+  width: 50%;
+  margin-top: 25px;
+  margin-left: 5%;
+}
+
+.foto {
+  margin-left: 15%;
+margin-top: 25px;
+}
+
+h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+/* footer */
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: #000000;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 350px;
+  opacity: 80%;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  font-size: 20px;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+
+  100% {
+    background-positon-x: 0px;
+  }
+}
