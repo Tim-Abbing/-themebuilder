@@ -1,4 +1,4 @@
-<html>
+<hhtml>
 
 <body>
   <footer class="footer">
@@ -18,8 +18,7 @@
     </ul>
     <ul class="menu">
       <li class="menu__item"><?php wp_nav_menu(array('theme_location' => 'primary', 'container' => 'nav', 'container_class' => 'site-navigation'));?></li>
-
-
+      <!-- hier worden een menu aan gemaakt zodat je andere bagina's kan zien -->
     </ul>
     <p>&copy;2023 Tim Abbing | All Rights Reserved</p>
   </footer>
